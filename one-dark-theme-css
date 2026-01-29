@@ -1,0 +1,232 @@
+/*
+* One Dark Theme for Thymer
+* Popular Atom-inspired dark theme
+* Variant: Dark only
+*
+* Color Usage Based on One Dark Pro:
+* - Red (#e06c75): Errors, variables, HTML tags
+* - Light Yellow (#e5c07b): Functions, attributes, class names  
+* - Dark Yellow/Orange (#d19a66): Numbers, constants, inline code
+* - Green (#98c379): Strings, success states
+* - Blue (#61afef): Keywords, primary actions, links (signature color)
+* - Cyan (#56b6c2): Special constants, mentions, support elements
+* - Magenta (#c678dd): Types, classes, hashtags, special markup
+* - Comment Gray (#5c6370): Muted elements, disabled states
+* - Gutter Gray (#4b5263): Subtle backgrounds
+*/
+
+/* ------------------------------------------- */
+/* One Dark - Balanced & Modern                */
+/* ------------------------------------------- */
+html[data-theme="basic-dark-onedark"] {
+    color-scheme: dark;
+
+    /* ------------------------------------------- */
+    /* 1. Headings - Bright White                 */
+    /* ------------------------------------------- */
+    .heading-h1,
+    .heading-h2,
+    .heading-h3,
+    .heading-h4,
+    .heading-h5,
+    .heading-h6 {
+        color: #abb2bf;
+    }
+
+    --text-base-size: 16px;
+  
+    /* ------------------------------------------- */
+    /* 2. Background Colors - Dark Grays          */
+    /* ------------------------------------------- */
+    --color-bg-50: #7e8694;
+    --color-bg-100: #5c6370;
+    --color-bg-150: #4b5263;
+    --color-bg-200: #3e4451;
+    --color-bg-300: #353b45;
+    --color-bg-400: #2c313a;
+    --color-bg-500: #282c34;
+    --color-bg-600: #282c34;
+    --color-bg-700: #21252b;
+    --color-bg-800: #2c313a; /* Sidebar - medium dark */
+    --color-bg-900: #282c34;  /* Main window - One Dark black */
+    --color-bg-950: #1e2227;
+    --color-bg-500-50: rgba(40, 44, 52, 0.5);
+    --color-bg-950-50: rgba(30, 34, 39, 0.65);
+
+    /* ------------------------------------------- */
+    /* 3. Primary Colors - One Dark Blue          */
+    /* ------------------------------------------- */
+    --color-primary-50: #e3f2fd;
+    --color-primary-100: #b3e5fc;
+    --color-primary-200: #81d4fa;
+    --color-primary-300: #4fc3f7;
+    --color-primary-400: #61afef; /* One Dark Blue */
+    --color-primary-500: #528bcc;
+    --color-primary-600: #4078c0;
+    --color-primary-700: #3465a4;
+    --color-primary-800: #2a5490;
+    --color-primary-900: #1e3a67;
+    --color-primary-950: #132542;
+    --color-primary-400-70: rgba(97, 175, 239, 0.7);
+    --color-primary-950-20: rgba(19, 37, 66, 0.2);
+    --color-primary-text-100: #282c34;
+
+    /* ------------------------------------------- */
+    /* 4. Text & Icons - Clean Whites & Grays    */
+    /* ------------------------------------------- */
+    --color-text-50: #abb2bf;
+    --color-text-100: #abb2bf;
+    --color-text-200: #9da5b4;
+    --color-text-300: #828997;
+    --color-text-400: #7e8694;
+    --color-text-500: #6c7380;
+    --color-text-600: #5c6370;
+    --color-text-700: #61afef;
+    --color-text-800: #828997;
+    --color-text-900: #353b45;
+    --color-text-950: #5c6370;
+
+    /* ------------------------------------------- */
+    /* 5. Semantic Colors - One Dark Palette      */
+    /* ------------------------------------------- */
+    --text-ok: #98c379;
+    --text-status-online: #98c379;
+    --text-warning: #e5c07b;
+    --text-error: #e06c75;
+    --bg-alert: #e06c75;
+    --fg-alert: #abb2bf;
+
+    /* ------------------------------------------- */
+    /* 6. Links, Tags & Mentions - Themed Colors */
+    /* ------------------------------------------- */
+    --link-color: #61afef;
+    --link-hover-color: #81c1f7;
+    --ed-link-color: #61afef;
+    --ed-link-hover-color: #81c1f7;
+
+    --ed-hashtag-color: #c678dd;
+    --ed-hashtag-bg: rgba(198, 120, 221, 0.15);
+
+    --ed-mention-color: #56b6c2;
+    --ed-mention-bg: rgba(86, 182, 194, 0.15);
+    --ed-mention-hover-bg: rgba(86, 182, 194, 0.25);
+    --ed-mention-hover-color: #7dd4dc;
+
+    --ed-datetime-color: #d19a66;
+    --ed-datetime-bg: rgba(209, 154, 102, 0.15);
+
+    /* ------------------------------------------- */
+    /* 7. Tasks & Checkboxes - One Dark Blue     */
+    /* ------------------------------------------- */
+    --ed-check-div-border: #61afef;
+    --ed-check-div-hover-border: #4fc3f7;
+    --ed-check-done-bg: #61afef;
+    --ed-check-done-fg: #282c34;
+
+    /* Done task styling */
+    .listitem.listitem-task.state-done .lineitem-text {
+        color: #5c6370 !important;
+        text-decoration-color: #5c6370 !important;
+        opacity: 1 !important;
+    }
+
+    /* ------------------------------------------- */
+    /* 8. Selection & Caret                        */
+    /* ------------------------------------------- */
+    --selection-bg: rgba(97, 175, 239, 0.3);
+    --selection-fg: #abb2bf;
+    --ed-selection-self-bg: rgba(97, 175, 239, 0.3);
+    --ed-selection-blurred-bg: rgba(97, 175, 239, 0.15);
+
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, #61afef 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px #61afef;
+
+    /* ------------------------------------------- */
+    /* 9. Quotes & Code - Dark Containers         */
+    /* ------------------------------------------- */
+    --ed-quote-border-color: #61afef;
+
+    --ed-code-border: transparent;
+    --ed-code-bg: rgba(75, 82, 99, 0.4);
+
+    /* Inline code */
+    .lineitem-code {
+        background-color: var(--color-bg-200) !important;
+        color: #d19a66 !important;
+        border-radius: 4px;
+        padding: 2px 5px;
+        font-family: var(--font-monospace);
+    }
+
+    /* Note blocks */
+    --ed-block-note-bg: rgba(97, 175, 239, 0.1);
+    --ed-block-note-border: #61afef;
+
+    /* ------------------------------------------- */
+    /* 10. UI Components - Dark Interface         */
+    /* ------------------------------------------- */
+    --cards-bg: #282c34;
+    --cards-hover-bg: #2c313a;
+    --cards-border-color: transparent;
+    --cards-border-color-focused: transparent;
+
+    --side-bg-active-focus: #61afef;
+    --side-fg-active-focus: #282c34;
+    --sidebar-bg-hover: #2c313a;
+    --sidebar-border-color: transparent;
+
+    --cmdpal-bg-color: #282c34;
+    --cmdpal-selected-bg-color: #61afef;
+    --cmdpal-selected-fg-color: #282c34;
+    --cmdpal-hover-bg-color: #2c313a;
+    --cmdpal-border-color: transparent;
+
+    --input-bg-color: #282c34;
+    --input-border-color: transparent;
+    --input-border-focus: 1px solid #61afef;
+    --input-border-shadow: 0 0 8px rgba(97, 175, 239, 0.4);
+
+    --button-primary-bg-color: #61afef;
+    --button-primary-fg-color: #282c34;
+    --button-primary-bg-hover-color: #4f9de6;
+    --button-bg-color: #2c313a;
+    --button-border-color: transparent;
+    --button-bg-hover-color: #3e4451;
+
+    --color-shadow: rgba(30, 34, 39, 0.5);
+    --color-shadow-cards: 0 4px 6px rgba(30, 34, 39, 0.4);
+    --color-shadow-hover: 0 6px 12px rgba(30, 34, 39, 0.5);
+
+    --logo-color: #61afef;
+    --logo-glow-shadow:
+        0 0 15px rgba(97, 175, 239, 0.4),
+        0 0 30px rgba(97, 175, 239, 0.2);
+
+    /* Enums - One Dark Palette */
+    --enum-red-bg: rgba(224, 108, 117, 0.25);
+    --enum-red-fg: #e06c75;
+    --enum-orange-bg: rgba(209, 154, 102, 0.25);
+    --enum-orange-fg: #d19a66;
+    --enum-yellow-bg: rgba(229, 192, 123, 0.25);
+    --enum-yellow-fg: #e5c07b;
+    --enum-green-bg: rgba(152, 195, 121, 0.25);
+    --enum-green-fg: #98c379;
+    --enum-cyan-bg: rgba(86, 182, 194, 0.25);
+    --enum-cyan-fg: #56b6c2;
+    --enum-blue-bg: rgba(97, 175, 239, 0.25);
+    --enum-blue-fg: #61afef;
+    --enum-purple-bg: rgba(198, 120, 221, 0.25);
+    --enum-purple-fg: #c678dd;
+    --enum-pink-bg: rgba(224, 108, 117, 0.25);
+    --enum-pink-fg: #e06c75;
+
+    --prop-border-focused: #282c34;
+    --prop-bg-focused: rgba(97, 175, 239, 0.3);
+    --shadow-sticky-row: 0 6px 12px rgba(0, 0, 0, 0);
+    --ed-drag-handle-color: #61afef;
+    --ed-drag-handle-hover-border: #4fc3f7;
+
+    --gradient-scrim: none;
+}
