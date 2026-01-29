@@ -1,2 +1,18 @@
 # thymer-one-dark-theme
-thymer-one-dark-theme
+Dark theme for the Thymer app based on the [One Dark theme.](https://github.com/joshdick/onedark.vim)
+
+If you add any areas I've missed please do submit a PR or tag me in the Discord themes channel and I'll add the changes :)
+
+## How to apply:
+1. Open the CSS file in this repository and copy (Ctrl + C) all of its contents.
+2. Open up Thymer. Press Ctrl + P > Edit Theme CSS > paste (Ctrl + V) > Click Save.
+3. Press Ctrl + P again > Set Theme > Select the desired theme.
+
+### Preview
+<img width="1712" height="1381" alt="image" src="https://github.com/user-attachments/assets/7e82eab9-3ec9-4202-b2f3-80dbf047c53e" />
+
+
+
+
+
+
