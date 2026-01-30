@@ -148,8 +148,12 @@ html[data-theme="basic-dark-onedark"] {
     /* ------------------------------------------- */
     --ed-quote-border-color: #61afef;
 
-    --ed-code-border: transparent;
-    --ed-code-bg: rgba(75, 82, 99, 0.4);
+    --ed-container-border-color: rgba(75, 82, 99, 0.25);   /* #4b5263 */
+    --ed-container-bg-color:     rgba(171, 178, 191, 0.08); /* #abb2bf */
+    
+    --ed-code-bg:                rgba(75, 82, 99, 0.25);   /* #4b5263 */
+    --ed-code-border:            rgba(171, 178, 191, 0.08); /* #abb2bf */
+
 
     /* Inline code */
     .lineitem-code {
